@@ -1,6 +1,6 @@
-*{
+* {
     font-family: 'Oswald', sans-serif;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +9,10 @@ body {
     display: grid;
     grid-template-rows: 120px 1fr 60px;
     grid-template-columns: 1fr;
-    grid-template-areas: "cabecalho" "principal" "rodape";
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
 }
 
 .cabecalho {
@@ -22,7 +25,7 @@ body {
     align-items: center;
     padding-bottom: 10px;
     z-index: 1;
-    box-shadow:  0px 4px 9px -2px black;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
 }
 
 .cabecalho > h1 {
@@ -37,32 +40,31 @@ body {
     font-size: 1.6rem;
 }
 
-.principal { 
+.principal {
     grid-area: principal;
     height: calc(100vh - 180px);
     background-color: #f0f0f0;
-    padding: 20px
+    padding: 20px;
 }
 
 .conteudo {
     position: relative;
     height: 100%;
-    overflow-y: #fff;
+    overflow-y: scroll;
+    background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 0px 25px 0px black;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .rodape {
     grid-area: rodape;
-    background-color: #ffff;
+    background-color: #fff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 1.2rem;
     padding-right: 20px;
     color: #444;
-    position: sticky;
-    bottom: 100px;
 }
 
 .modulos {
@@ -73,6 +75,8 @@ body {
 
 .modulo {
     flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .modulo > h3 {
@@ -87,12 +91,12 @@ body {
 .modulo > ul {
     margin: 0px;
     padding: 10px;
-    list-style-type: none;
+    list-style: none;
 }
 
 .modulo > ul > li {
-    padding: 10px;
-    font-size: 1.3rem;
+    padding: 7px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -103,32 +107,32 @@ body {
 }
 
 .modulo > ul > li:hover {
-    background-color: #EEE
+    background-color: #EEE;
 }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.verde { border: 2px solid #4CAF50; }
+.modulo.verde > h3 { background-color: #4CAF50; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.vermelho { border: 2px solid #F44336; }
+.modulo.vermelho > h3 { background-color: #F44336; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.azul { border: 2px solid #2196F3; }
+.modulo.azul > h3 { background-color: #2196F3; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.roxo { border: 2px solid #9C27B0; }
+.modulo.roxo > h3 { background-color: #9C27B0; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.laranja { border: 2px solid #FF9800; }
+.modulo.laranja > h3 { background-color: #FF9800; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.verde-escuro { border: 2px solid #1B5E20; }
+.modulo.verde-escuro > h3 { background-color: #1B5E20; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.vermelho-escuro { border: 2px solid #B71C1C; }
+.modulo.vermelho-escuro > h3 { background-color: #B71C1C; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.azul-escuro { border: 2px solid #0D47A1; }
+.modulo.azul-escuro > h3 { background-color: #0D47A1; }
 
-.modulo.cor{border: 2px solid #}
-.modulo.cor > h3 {background-color: #;}
+.modulo.roxo-escuro { border: 2px solid #4A148C; }
+.modulo.roxo-escuro > h3 { background-color: #4A148C; }
